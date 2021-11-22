@@ -311,16 +311,19 @@ body {
     background-color: white;
     color: hsl(233, 4%, 56%);
     position: absolute;
-    height: 50vh;
     top: 4em;
-    right: 2em;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 90vw;
     align-items: center;
     transform: translateY(-200%);
     transition: 1ms;
     cursor: pointer;
+}
+
+nav a {
+    padding: 1em 0;
+    font-size: 15px;
 }
 
 .nav-active {
@@ -331,10 +334,12 @@ body {
 .contact {
     background-color: yellow;
     font-family: 'Fraunces';
+    font-size: 12px;
     padding: 0.9em;
     border-radius: 40px;
     color: hsl(212, 27%, 19%);
     text-transform: uppercase;
+    margin-bottom: 2em;
 }
 
 .triangle {
@@ -393,13 +398,17 @@ body {
 }
 
 .cherry {
-    bottom: 9em;
-    left: 23%;
+    position: absolute;
+    z-index: 23;
+    top: 12em;
+    left: 7em;
 }
 
 .orange {
-    bottom: -14em;
-    left: 23%;
+    position: absolute;
+    z-index: 23;
+    top: 35em;
+    left: 7em;
 }
 
 .text-on-img {
