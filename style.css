@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------- Typography --------*/
+p,
+a {
+    font-family: 'Barlow';
+    font-size: 0.7em;
+    padding: 0.5em;
+    margin: 0.5em 1em;
+}
+
+p { color: rgb(0, 0, 0, 0.7);}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Fraunces';
+}
+
+h1 { font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+h2 { font: 2em; color: black;}
+h6 {
+    color: rgb(0, 0, 0, 0.4);
+    font-family: 'Barlow';
+    padding: 0.5em;
+}
+
+body {
+    font-size: 18px;
+    color: white;
+    overflow-x: hidden;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 1em;
+}
+
+header a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+}
+
+.logo {
+    width: 7em;
+}
+
+/* For Mobile Menu */
+.menu-icon {
+    position: absolute;
+    right: 2em;
+    display: none;
+}
+
+/*-------- Creatives Section --------*/
+
+.creatives {
+    background-image: url(/images/desktop/image-header.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.creatives-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3em;
+}
+
+.arrow-icon {
+    margin-top: 8em;
+    width: 1.5em;
+    height: 5em;
+}
+
+/*-------- Transform Section --------*/
+.text-container {
+    place-self: center;
+    width: 40%;
+}
+
+.sect-transform {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 70vh;
+    background-color: rgb(255, 252, 247);
+    color: black;
+}
+
+.sect-transform img {
+    width: 50vw;
+    position: relative;
+    height: 70vh;
+}
+
+.side-text {
+    width: 60%;
+    padding-inline-start: 3em;
+}
+
+.side-text p{
+    font-family: 'Barlow';
+    margin: 0;
+    padding: 2em 0;
+}
+
+.side-text a {
+    font-family: 'Fraunces';
+    font-weight: 900;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black;
+    border-bottom: 4px solid yellow;
+    padding:  0;
+    margin: 0;
+}
+
+/*-------- Stand Section --------*/
+.sect-3 {
+    display: flex;
+    height: 70vh;
+    background-color: rgb(255, 252, 247);
+}
+
+.sect-3 img {
+    width: 50vw;
+    height: 70vh;
+}
+
+.sect-transform img,
+.sect-4 img {
+    width: 50vw;
+    position: relative;
+}
+
+.side-text a {
+    border-bottom: 4px solid hsl(7, 99%, 70%);
+}
+
+
+
+/*-------- Graphic-Photography Section --------*/
+.sect-4 {
+    display: flex;
+    position: relative;
+}
+
+.bottom-text-container {
+    position: absolute;
+    bottom: 20px;
+    width: 50%;
+    text-align: center;
+    color: rgb(0, 0, 0, 0.6);
+    margin: auto;
+    padding: 0.5em 0;
+}
+
+.text-on-img {
+    width: 16em;
+    margin: auto;
+    place-self: center;
+}
+
+.text-on-img p{
+    font-family: 'Barlow';
+}
+
+.text-on-img h3{
+    padding: 1.5em 0;
+}
+
+
+/* Testimonials */
+.sect-5{
+    background-color: rgb(255, 252, 247);
+    color: hsl(212, 27%, 19%);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4em 0;
+}
+
+.title {
+    letter-spacing: 0.6em;
+    padding: 3em 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+}
+
+.testimonies{
+    max-width: 16em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonies img {
+    border-radius: 50%;
+    width: 3em;
+    padding: 2em 0;
+}
+
+.testimonies h4 {
+    padding-top: 2em;
+    font-family: 'Fraunces';
+}
+
+.title {
+    color: hsl(232, 10%, 55%);
+    font-size: 1em;
+    letter-spacing: 0.4em;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+
+/* Footer */
+
+footer {
+    height: 50vh;
+    background-color: rgb(134, 220, 223);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(168, 34%, 41%);
+    justify-items: center;
+    
+}
+
+.bottom-logo {
+    width: 7em;
+    padding: 1.5em 0;
+}
+
+footer .socials {
+    padding-top: 4em;
+    display: flex;
+    justify-content: center;
+}
+
+.socials img {
+    padding: 0.5em;
+    width: 1.8em;
+}
+
+/*-------- Attributions --------*/
+
+.attribution { 
+    display: flex;
+    font-size: 18px; 
+    text-align: center; 
+    background-color: darkcyan; 
+
+}
+.attribution a { 
+    color: rgb(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: inherit;
+}
+
+                            /* ------- MOBILE --------*/
+
+@media screen and (max-width: 500px) {
+    /* for mobile phones */
+
+
+body {
+    font-size: 18px;
+}
+
+.menu-icon {
+    display: block;
+    border: none;
+    background: none;
+    width: 4em;
+}
+
+.navbar {
+    background-color: white;
+    color: hsl(233, 4%, 56%);
+    position: absolute;
+    top: 4em;
+    right: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    transition: 1ms;
+}
+
+.nav-active {
+    transform: translateY(-200%);
+    transition: 200ms ease-in;
+}
+
+.navbar a:hover{
+    background-color: yellow;
+    font-family: 'Fraunces';
+    padding: 0.9em;
+    text-transform: uppercase;
+}
+
+.triangle {
+    width: 0; 
+  height: 0; 
+  border-top: 30px solid transparent;
+  border-bottom: 10px solid transparent; 
+  border-right: 30px solid white;
+  position: absolute;
+  right: 0;
+  top: -30px; 
+  }
+
+.creatives-text {
+    text-align: center;
+}
+
+.arrow-icon {
+    margin-top: 4em;
+    width: 2em;
+    height: 8em;
+}
+
+
+.sect-3 img,
+.sect-transform img {
+    width: 100vw;
+    height: 50vh;
+}
+
+
+.sect-4 img {
+    width: 100vw;
+    position: relative;
+}
+
+.sect-transform,
+.sect-3,
+.sect-4 {
+    flex-direction: column;
+    height: 150vh;
+}
+
+.text-container
+{
+    height: 100vh;
+    background-color: ivory;
+    display:flex;
+    width: 100%;
+}
+
+.side-text {
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.cherry {
+    bottom: 9em;
+    left: 23%;
+}
+
+.orange {
+    bottom: -14em;
+    left: 23%;
+}
+
+.text-on-img {
+    width: 16em;
+    margin: auto;
+    place-self: center;
+}
+
+.sect-5{
+    height: 245vh;
+    padding-top: 4em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.testimonies{
+    max-width: 90vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery {
+    grid-template-columns: 50% 50%;
+}
+
+.gallery img {
+    height: 30vh;
+}
+
+}
