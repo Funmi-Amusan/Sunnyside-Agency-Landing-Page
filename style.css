@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    margin: 0;
+}
+
 /*-------- Typography --------*/
 p,
 a {
@@ -66,6 +71,7 @@ header {
     position: absolute;
     right: 2em;
     display: none;
+    outline: none;
 }
 
 /*-------- Creatives Section --------*/
@@ -83,6 +89,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding-top: 3em;
+    text-align: center;
 }
 
 .arrow-icon {
@@ -92,6 +99,16 @@ header {
 }
 
 /*-------- Transform Section --------*/
+.transform-image {
+    background: url(/images/desktop/image-transform.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 50vw;
+}
+
+
 .text-container {
     place-self: center;
     width: 40%;
@@ -105,15 +122,9 @@ header {
     color: black;
 }
 
-.sect-transform img {
-    width: 50vw;
-    position: relative;
-    height: 70vh;
-}
-
 .side-text {
-    width: 60%;
-    padding-inline-start: 3em;
+    width: 100%;
+    padding-inline: min(4em, 10%);
 }
 
 .side-text p{
@@ -140,9 +151,13 @@ header {
     background-color: rgb(255, 252, 247);
 }
 
-.sect-3 img {
-    width: 50vw;
+.standout-image {
+    background: url(/images/desktop/image-stand-out.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 70vh;
+    width: 50vw;
 }
 
 .sect-transform img,
@@ -163,28 +178,42 @@ header {
     position: relative;
 }
 
-.bottom-text-container {
-    position: absolute;
-    bottom: 20px;
-    width: 50%;
-    text-align: center;
-    color: rgb(0, 0, 0, 0.6);
-    margin: auto;
-    padding: 0.5em 0;
+.graphic {
+    background: url(/images/desktop/image-graphic-design.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.text-on-img {
-    width: 16em;
-    margin: auto;
-    place-self: center;
+.photography {
+    background: url(/images/desktop/image-photography.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.bottom-text-container {
+    width: min(15em,80%);
+    height: 30%;
+    text-align: center;
+    color: rgb(0, 0, 0, 0.6);
+    margin-bottom: 2em;
 }
 
 .text-on-img p{
     font-family: 'Barlow';
-}
-
-.text-on-img h3{
-    padding: 1.5em 0;
+    font-size: 12px;
 }
 
 
@@ -236,13 +265,48 @@ header {
     letter-spacing: 0.4em;
 }
 
+/*--------- Gallery --------*/
+
 .gallery {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
 }
 
-.gallery img {
-    width: 100%;
+.milk-bottles {
+    background: url(/images/desktop/image-gallery-milkbottles.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.oranges {
+    background: url(/images/desktop/image-gallery-orange.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.cone {
+    background: url(/images/desktop/image-gallery-cone.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.sugar-cubes {
+    background: url(/images/desktop/image-gallery-sugarcubes.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.milk-bottles,
+.cone,
+.oranges,
+.sugar-cubes {
+    height: 50vh;
 }
 
 
@@ -292,12 +356,13 @@ footer .socials {
 
                             /* ------- MOBILE --------*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 385px) {
     /* for mobile phones */
 
 
 body {
-    font-size: 18px;
+    font-size: 14px;
+    width: 100vw;
 }
 
 .menu-icon {
@@ -353,6 +418,10 @@ nav a {
   top: -30px; 
   }
 
+.creatives {
+    height: 70vh;
+}
+
 .creatives-text {
     text-align: center;
 }
@@ -363,24 +432,23 @@ nav a {
     height: 8em;
 }
 
+.bottom-text-container {
+    background-color: peru;
 
-.sect-3 img,
-.sect-transform img {
-    width: 100vw;
-    height: 50vh;
 }
 
-
-.sect-4 img {
+.transform-image,
+.standout-image,
+.graphic,
+.photography {
     width: 100vw;
-    position: relative;
 }
 
 .sect-transform,
 .sect-3,
 .sect-4 {
     flex-direction: column;
-    height: 150vh;
+    height: 100vh;
 }
 
 .text-container
@@ -397,19 +465,7 @@ nav a {
     text-align: center;
 }
 
-.cherry {
-    position: absolute;
-    z-index: 23;
-    top: 12em;
-    left: 7em;
-}
 
-.orange {
-    position: absolute;
-    z-index: 23;
-    top: 35em;
-    left: 7em;
-}
 
 .text-on-img {
     width: 16em;
@@ -418,7 +474,7 @@ nav a {
 }
 
 .sect-5{
-    height: 245vh;
+    height: 100vh;
     padding-top: 4em;
 }
 
@@ -439,8 +495,82 @@ nav a {
     grid-template-columns: 50% 50%;
 }
 
-.gallery img {
+.gallery > div {
+    height: 20vh;
+    object-fit: cover;
+}
+
+footer {
     height: 30vh;
+}
+
+/*---------- Mobile Images ----------*/
+ .creatives {
+    background-image: url(/images/mobile/image-header.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .transform-image {
+    background: url(/images/mobile/image-transform.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.standout-image {
+    background: url(/images/mobile/image-stand-out.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.graphic {
+    background: url(/images/mobile/image-graphic-design.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.photography {
+    background: url(/images/mobile/image-photography.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.milk-bottles {
+    background: url(/images/mobile/image-gallery-milkbottles.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.oranges {
+    background: url(/images/mobile/image-gallery-orange.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.cone {
+    background: url(/images/mobile/image-gallery-cone.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.sugar-cubes {
+    background: url(/images/mobile/image-gallery-sugar-cubes.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 }
