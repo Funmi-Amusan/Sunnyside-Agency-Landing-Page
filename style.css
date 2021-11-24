@@ -215,7 +215,6 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
 }
 
 .bottom-text-container {
@@ -447,6 +446,7 @@ nav a {
     height: 8em;
 }
 
+
 .transform-image,
 .standout-image,
 .graphic,
@@ -475,7 +475,10 @@ nav a {
     text-align: center;
 }
 
-
+.graphic,
+.photography {
+    height: 90vh;
+}
 
 .text-on-img {
     width: 16em;
@@ -515,72 +518,65 @@ footer {
 }
 
 /*---------- Mobile Images ----------*/
- .creatives {
-    background-image: url(/images/mobile/image-header.jpg);
+.creatives,
+.transform-image,
+.standout-image {
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+ .creatives {
+    background-image: url(/images/mobile/image-header.jpg);
  }
 
  .transform-image {
     background: url(/images/mobile/image-transform.jpg);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .standout-image {
     background: url(/images/mobile/image-stand-out.jpg);
-    background-position:center;
+}
+
+.graphic,
+.photography {
+    background-position:top;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 .graphic {
     background: url(/images/mobile/image-graphic-design.jpg);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
 }
 
 .photography {
     background: url(/images/mobile/image-photography.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
 }
 
-
-.milk-bottles {
-    background: url(/images/mobile/image-gallery-milkbottles.jpg);
+.milk-bottles,
+.oranges,
+.cone,
+.sugar-cubes {
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.milk-bottles {
+    background: url(/images/mobile/image-gallery-milkbottles.jpg);
     }
 
 .oranges {
     background: url(/images/mobile/image-gallery-orange.jpg);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
 }
 
 .cone {
     background: url(/images/mobile/image-gallery-cone.jpg);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
 }
 
 .sugar-cubes {
     background: url(/images/mobile/image-gallery-sugar-cubes.jpg);
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
 
 }
